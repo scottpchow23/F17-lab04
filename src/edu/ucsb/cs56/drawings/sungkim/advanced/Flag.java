@@ -30,7 +30,7 @@ public class Flag extends GeneralPathWrapper implements Shape
 
         // Rather than having to scale at the end, we can just
         // draw things the right way to begin with, using the
-        // x, y, width and height.   If you haven't already
+        // x, y, and height.   If you haven't already
         // hard coded a particular drawing, this may be an easier
         // way.
 

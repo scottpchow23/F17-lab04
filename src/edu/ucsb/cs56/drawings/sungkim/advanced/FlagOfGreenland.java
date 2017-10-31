@@ -22,28 +22,21 @@ public class FlagOfGreenland extends Flag implements Shape
     */
     public FlagOfGreenland(double x, double y, double height)
     {
-	// construct the basic house shell
+	// construct the basic flag shell
 	super(x,y,height);
 
 	// get the GeneralPath that we are going to append stuff to
 	GeneralPath gp = this.get();
 
-	// Make three windows, spaced like this, where w=width/10.0;
-	// | +--+ +--+ +--+ |
-	// | |  | |  | |  | |
-	// | +--+ +--+ +--+ |
-	// |w 2w w 2w w w2 w|
-	//
-	// The top of window will be at y + 0.5*height and the
-	// height of the window is 0.25height;
-
-
-
+        // in the flag of Greenland, a horizontal line runs halfway
+        // through the flag
 	double horizontalStartX = x + height * .1;
 	double horizontalStartY = y + height * .3;
 	double horizontalEndX = horizontalStartX + height * .6;
         double horizontalEndY = y + height * .3;
 
+        // in the flag of Greenland, a circle exists closer to the
+        // left side of the flag
         double ellipseX = horizontalStartX + .166 * height * .6;
         double ellipseY = horizontalStartY - .166 * height * .6;
         double ellipseDiam = height * .2;
@@ -54,10 +47,7 @@ public class FlagOfGreenland extends Flag implements Shape
 	Ellipse2D.Double comp2 =
 	    new Ellipse2D.Double(ellipseX, ellipseY, ellipseDiam, ellipseDiam);
 
-
-	// add the windows to the house
-	// Look up the meaning of the second parameter of append
-	// (Hint--is a method of "GeneralPath")
+        //Adds the flag of Greenland's characteristics to your regular flag
 
         GeneralPath wholeFlag = this.get();
         wholeFlag.append(comp1, false);
