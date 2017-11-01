@@ -7,7 +7,7 @@ import javax.swing.JFrame;
  *
  * @author P. Conrad
  * @author Sung Kim
- * @version CS56, W16, UCSB
+ * @version CS56, F17, UCSB
  */
 
 public class PictureViewer
@@ -22,7 +22,7 @@ public class PictureViewer
 	frame.setSize(640,480); // @@@ MODIFY THIS LINE IF YOU LIKE
 
 	// Set your own title
-	frame.setTitle("YOUR NAME HERE's Drawing"); // @@@ MODIFY THIS LINE
+	frame.setTitle("Sung Kim's Drawing"); // @@@ MODIFY THIS LINE
 
 	// Always do this so that the red X (or red circle) works
 	// to close the window.
