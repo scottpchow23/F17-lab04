@@ -6,31 +6,32 @@ import javax.swing.JComponent;
 
 /**
    A component that draws a Picture by Phill Conrad
-   
+
    @author Phill Conrad (original drawing)
-   @version CS56, W16, UCSB
+   @author Ryan Kirkpatrick (new drawing)
+   @version CS56, F17, UCSB
 */
 
 
 public class MultiPictureComponent extends JComponent
-{  
+{
     private int whichPicture = 0;
-    
+
     public MultiPictureComponent(int whichPicture) {
 	this.whichPicture = whichPicture;
     }
-    
+
     /** The paintComponent method is always required if you want
-     * any graphics to appear in your JComponent.    
-     * 
+     * any graphics to appear in your JComponent.
+     *
      * There is a paintComponent
      * method that is created for you in the JComponent class, but it
      * doesn't do what we want, so we have to "override" that method with
-     * our own method.  
+     * our own method.
      */
-    
+
     public void paintComponent(Graphics g)
-    {  
+    {
 	Graphics2D g2 = (Graphics2D) g;
 	switch (this.whichPicture) {
 	case 1:
