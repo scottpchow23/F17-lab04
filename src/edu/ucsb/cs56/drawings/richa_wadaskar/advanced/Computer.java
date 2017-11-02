@@ -57,7 +57,7 @@ public class Computer extends GeneralPathWrapper implements Shape
 				   width - (2*innerScreenWidth), screenHeight - (2*innerScreenWidth));
 	
 	Rectangle2D.Double stand = new Rectangle2D.Double(standX, standY,
-				   standBaseWidth, standBaseHeight);
+				   standWidth, standHeight);
 	
 	Rectangle2D.Double standBase =
 	    new Rectangle2D.Double(x + width/2 - 0.5*standBaseWidth, standY + standHeight, standBaseWidth, standBaseHeight);
